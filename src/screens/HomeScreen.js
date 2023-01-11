@@ -22,6 +22,11 @@ const HomeScreen = (props) => {
         title="Go to Image demo" 
       />
 
+      <Button
+        onPress={() => props.navigation.navigate('Counter')} 
+        title="Go to Counter demo" 
+      />
+
       {/* <TouchableOpacity onPress={() => console.log('List pressed')}>
         <Text>Go to list demo</Text>
       </TouchableOpacity> */}
