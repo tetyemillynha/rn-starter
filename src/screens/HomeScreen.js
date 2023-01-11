@@ -7,25 +7,47 @@ const HomeScreen = (props) => {
     <View>
       <Text style={styles.text}>Hi There!</Text>
 
-      <Button
+      <TouchableOpacity
+        style={styles.button}
         onPress={() => props.navigation.navigate('Components')} 
-        title="Go to Components demo" 
-      />
+      >
+        <Text>Go to Components demo</Text>
+      </TouchableOpacity>
 
-      <Button
+      <TouchableOpacity
+        style={styles.button}
         onPress={() => props.navigation.navigate('List')} 
-        title="Go to List demo" 
-      />
+      >
+        <Text>Go to List demo</Text>
+      </TouchableOpacity>
 
-      <Button
+      <TouchableOpacity
+        style={styles.button}
         onPress={() => props.navigation.navigate('Image')} 
-        title="Go to Image demo" 
-      />
+      >
+        <Text>Go to Image demo</Text>
+      </TouchableOpacity>
 
-      <Button
+      <TouchableOpacity
+        style={styles.button}
         onPress={() => props.navigation.navigate('Counter')} 
-        title="Go to Counter demo" 
-      />
+      >
+        <Text>Go to Counter demo</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => props.navigation.navigate('Color')} 
+      >
+        <Text>Go to Color demo</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => props.navigation.navigate('Square')} 
+      >
+        <Text>Go to Square demo</Text>
+      </TouchableOpacity>
 
       {/* <TouchableOpacity onPress={() => console.log('List pressed')}>
         <Text>Go to list demo</Text>
@@ -37,6 +59,15 @@ const HomeScreen = (props) => {
 const styles = StyleSheet.create({
   text: {
     fontSize: 30,
+  },
+  button: {
+    margin: 10,
+    alignItems: "center",
+    backgroundColor: "white",
+    border: "solid",
+    borderWidth: 1,
+    borderColor: "green",
+    padding: 10
   },
 });
 
